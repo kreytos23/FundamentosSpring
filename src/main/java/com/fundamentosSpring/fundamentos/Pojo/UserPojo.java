@@ -3,6 +3,13 @@ package com.fundamentosSpring.fundamentos.Pojo;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.ConstructorBinding;
 
+/**
+ * Con esta clase se hace el POJO, usando los valores declarados en nuestro
+ * archivo de properties
+ * Se declaran los atributos con los mismos nombres que se pusieron el el properties
+ * sin antes declarar el sufix de nuestras propiedades que en este caso fue "user"
+ */
+
 @ConstructorBinding
 @ConfigurationProperties(prefix = "user")
 public class UserPojo {

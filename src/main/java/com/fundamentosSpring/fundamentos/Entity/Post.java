@@ -2,6 +2,17 @@ package com.fundamentosSpring.fundamentos.Entity;
 
 import javax.persistence.*;
 
+/**
+ * Aqui se usa Java JPA, que es la API para modelar bases de datos con clases
+ * de Java.
+ * Primero se usan las anotaciones @Entity y @Table para declarar que la clase será el modelo
+ * de una tabla y con table se le da el nombre que tendra la tabla
+ *
+ * Despues de usan otras anotaciones comop @Column y @Id para defenir parametros usados en la
+ * declaracion de tablas como normalmente se haria en un RDBMS
+ */
+
+
 @Entity
 @Table(name = "post")
 public class Post {
